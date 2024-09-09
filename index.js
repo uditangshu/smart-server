@@ -9,7 +9,7 @@ require('dotenv').config();
 
 app.use(cors())
 app.use(express.json())
-// Example API endpoint
+
 app.get('/api/maps', async (req, res) => {
   const { origins, destinations } = req.query;
   const apiKey = process.env.API_KEY;
